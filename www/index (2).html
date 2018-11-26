@@ -1,0 +1,153 @@
+	<!DOCTYPE HTML>
+
+	<html>
+		<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="HTML5, CSS3">
+		<link type="image/x-icon" href="Imagenes/favicon.ico" rel="icon" />
+		<link type="image/x-icon" href="Imagenes/favicon.ico" rel="shortcut icon" />
+		<title> LPB/LFB Corporation </title>
+		</head>
+	 <link rel="stylesheet" href="style3.css">
+	 <script src="jquery-latest.js"></script>
+	 <script src="main.js"></script>
+
+	<header>
+			<div class="contenedor">
+				<nav class="menu">
+					<ul >
+					<li><a href="index.php">Home</a></li>
+						<li><a href="Estetica.php">Estética</a></li>
+						<li><img src="IMG-20170814-WA0042.png" width="90"></li>
+						<li><a href="Precios.php">Precios</a></li>
+						<li><a href="Contactos.php">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</center>
+	</header>
+
+	<body>
+	<div class="contenedor">
+			<article>
+	<div class="slider">
+		<input type="radio" name="slide_switch" id="id1"/>
+		<label for="id1">
+			<img src="1.jpg" width="100"/>
+		</label>
+		<img src="1.jpg">
+
+		<input type="radio" name="slide_switch" id="id2" checked="checked"/>
+		<label for="id2">
+			<img src="2.jpg" width="100"/>
+		</label>
+		<img src="2.jpg"/>
+		
+		<input type="radio" name="slide_switch" id="id3"/>
+		<label for="id3">
+			<img src="3.jpg" width="100"/>
+		</label>
+		<img src="3.jpg"/>
+		
+		<input type="radio" name="slide_switch" id="id4"/>
+		<label for="id4">
+			<img src="4.jpg" width="100"/>
+		</label>
+		<img src="4.jpg"/>
+		
+		<input type="radio" name="slide_switch" id="id5"/>
+		<label for="id5">
+			<img src="8.png" width="100"/>
+		</label>
+		<img src="8.png"/>
+	</div>
+
+	<br>
+	<br>
+
+	<h1><div bgcolor="#ffffff" align="center">
+	<br>
+	<font color="#000000" face="Borda" size="7"> ¿Quiénes somos? </font>
+	<br>
+	<font color="#000000" face="Century Gothic" size="4">
+		<blockquote><p>En BELLE SPA te invitamos a que decidas qué hacer en cada momento, 
+		razón por la que te ofrecemos la posibilidad de vivir la mejor de las experiencias.</p>
+		<p>Es un lugar ideal para disfrutar un momento de tranquilidad, bienestar y por supuesto, belleza.</p>
+		<p>Recibira una excellente atencion personalizada, brindada por nuestro equipo altamente
+		capacitado en todos los servicios disponibles:</p>
+		<p>Tratamientos faciales, corporales y masajes</p>
+		<p>Nuestro principal objetivo es que usted pueda relajarse y que tengo un momento para dejar
+		de preocuparse por las dificultades del dia a dia.</p><blockquote>	
+	</font>
+	</div></h1>
+<!-- inicio de sesion -->
+	<center><div class="tit"><h2 style="color: #FFFFFF; ">Inicio de sesión</h2>
+		<center><div class="Ingreso">
+
+	<table border="0" align="center" valign="middle">
+		<tr>
+		<td rowspan=2>
+		<form action="validar.php" method="post">
+
+		<table border="0">
+
+		<tr><td><label style="font-size: 14pt"><b>Correo: </b></label></td>
+			<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="mail"></td></tr>
+		<tr><td><label style="font-size: 14pt"><b>Contraseña: </b></label></td>
+			<td witdh=80><input style="border-radius:15px;" type="password" name="pass"></td></tr>
+		<tr><td></td>
+			<td width=80 align=center><input class="btn btn-primary" type="submit" value="Aceptar"></td>
+			</tr></tr></table>
+		</form>
+<br>
+<!-- final del inicio de sesion -->
+<!-- formulario registro -->
+
+<form action="registro.php" method="post" >
+  <fieldset>
+    <legend  style="font-size: 18pt"><b>Registro</b></legend>
+    <div class="form-group">
+      <label style="font-size: 14pt"><b>Ingresa tu nombre</b></label>
+      <input type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu email</b></label>
+      <input type="text" name="nick" class="form-control"  required placeholder="Ingresa mail"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu Password</b></label>
+      <input type="password" name="pass" class="form-control"  placeholder="Ingresa contraseña" />
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt"><b>Repite tu contraseña</b></label>
+      <input type="password" name="rpass" class="form-control" required placeholder="repite contraseña" />
+    </div>
+      
+    </div>
+   
+    <input  class="btn btn-danger" type="submit" name="submit" value="Registrarse"/>
+
+  </fieldset>
+</form>
+</div>
+<?php
+		if(isset($_POST['submit'])){
+			require("registro.php");
+		}
+	?>
+<!-- final formulario registro -->
+
+		</td>
+		</tr>
+		</table>
+		</div></center></div></center>
+	<br>
+	<br>
+	<footer align="center" id="pie"><font color="#ffffff">
+	Derechos LPB/LFB &copy;2017/2018
+	</font></footer>
+			</article>
+	</div>
+	</body>
+	</html>

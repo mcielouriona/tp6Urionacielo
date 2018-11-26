@@ -1,0 +1,220 @@
+@font-face
+{
+   font-family: "Borda";
+   src: url("Borda.eot");
+   src: url("Borda.eot?#amocristalab") format("embedded-opentype"),
+        url("Borda.woff") format("woff"),
+        url("Borda.ttf") format("truetype"),
+        url("Borda.svg#IDdelafuente") format("svg");
+}
+
+@font-face
+{
+   font-family: "Whatnot";
+   src: url("Whatnot.eot");
+   src: url("Whatnot.eot?#amocristalab") format("embedded-opentype"),
+        url("Whatnot.woff") format("woff"),
+        url("Whatnot.ttf") format("truetype"),
+        url("Whatnot.svg#IDdelafuente") format("svg");
+}
+
+
+h1
+{
+	background:#ffffff;
+   font-family: "Century Gothic";
+   padding-top: 15px;
+   margin-left: 200px;
+   margin-right: 200px;
+   padding-bottom: 15px;
+}
+
+
+.contenedor {
+	width: auto;
+	max-width: auto;
+	margin: auto;
+	font-family: Century Gothic;
+	font-size: 20px;
+}
+}
+.contenedor p {
+	margin-bottom: 40px;
+}
+ 
+header nav {
+	background: #ffffff; /*Color */
+	margin-bottom: 50px; /*Se va a la wea lo de abajo */
+}
+ 
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+ 
+header nav ul li {
+	text-align: center;
+	display: inline-block;
+}
+header nav ul li a {
+
+	padding: 105px;
+	color: #000000;
+	text-decoration: none;
+}
+ 
+header nav ul li a:hover {
+	background:#62be91;
+}
+ 
+ 
+/* --- El efecto gil  --- */
+
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	left:0;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+/* --- ------------------- --- */
+
+#full {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* --- ------------------- --- */
+
+
+.slider{
+	width: 640px; /*Same as width of the large image*/
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 320px; /*That helps bring the labels down*/
+	
+	margin: 50px auto;
+	
+	/*Lets add a shadow*/
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*Lets add some spacing for the thumbnails*/
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* --- ------------------- --- */
+
+.wrapper {
+  width: auto;
+  margin: auto;
+  overflow:hidden;
+}
+
+#sida {
+padding: auto;
+} 
+
+/* ------------------*/ 
+
+* {
+	padding:10;
+	margin:1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background:url(scene00146.gif); /* Nuestra imagen de fondo */
+	background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-size:cover; /* Encajamos la imagen al 100% del ancho */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+ 
+	font-family:helvetica, arial, sans-serif;
+	line-height:20px;
+}
+
+.contenedor {
+	
+	margin:auto;
+}
+
+article {
+	
+	padding:0px;
+	margin:10px 0;
+	color:#fff;
+
+}
+
+article h2 {
+	color:#fff;
+}
+
+article hr {
+	background:#F64740;
+	height:5px;
+	border:none;
+}
+
+article p {
+	line-height: 25px;
+}
+
+article h2, article p, article hr {
+	margin-bottom: 20px;
+}
+
